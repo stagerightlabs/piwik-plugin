@@ -1,4 +1,4 @@
-<?php namespace SRLabs\Piwik\Components;
+<?php namespace srlabs\Piwik\Components;
 
 use Cms\Classes\ComponentBase;
 use SRLabs\Piwik\Models\Settings;

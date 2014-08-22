@@ -1,4 +1,4 @@
-<?php namespace SRLabs\Piwik;
+<?php namespace srlabs\Piwik;
 
 class Plugin extends \System\Classes\PluginBase
 {
@@ -15,7 +15,7 @@ class Plugin extends \System\Classes\PluginBase
     public function registerComponents()
     {
         return [
-            'SRLabs\Piwik\Components\Piwik' => 'piwik'
+            'srlabs\Piwik\Components\Piwik' => 'piwik'
         ];
     }
 
@@ -26,7 +26,7 @@ class Plugin extends \System\Classes\PluginBase
                 'label' => 'Piwik Free/Libre Analytics',
                 'icon' => 'icon-bar-chart-o',
                 'description' => 'Configure Piwik tracking options.',
-                'class' => 'SRLabs\Piwik\Models\Settings',
+                'class' => 'srlabs\Piwik\Models\Settings',
                 'order' => 600
             ]
         ];

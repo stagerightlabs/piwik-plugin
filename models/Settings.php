@@ -1,4 +1,4 @@
-<?php namespace SRLabs\Piwik\Models;
+<?php namespace srlabs\Piwik\Models;
 
 use Model;
 
