@@ -1,0 +1,10 @@
+fields:
+  tracker_domain:
+    span: left
+    label: Tracking Site Domain
+    commentAbove: The URL for your Piwik Installation
+
+  site_id:
+    span: left
+    label: Site Id
+    commentAbove: The site ID for this website

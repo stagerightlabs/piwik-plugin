@@ -13,13 +13,13 @@ class Piwik extends ComponentBase
 		];
 	}
 
-	public function trackerUrl()
+	public function trackerDomain()
 	{
-		return Settings::get('tracker_url');
+        return Settings::get('tracker_domain');
 	}
 
 	public function siteId()
 	{
-		return Settings::get('site_id');
+        return Settings::get('site_id');
 	}
 }
