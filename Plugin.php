@@ -18,6 +18,16 @@ class Plugin extends \System\Classes\PluginBase
             'srlabs\Piwik\Components\Piwik' => 'piwik'
         ];
     }
+    
+    public function registerPermissions()
+    {
+        return [
+            'srlabs.piwik.access_settings' => [
+                'tab'   => 'Piwik Free/Libre Analytics',
+                'label' => 'Modify Piwik component parameters'
+            ],
+        ];
+    }
 
     public function registerSettings()
     {
@@ -27,6 +37,7 @@ class Plugin extends \System\Classes\PluginBase
                 'icon' => 'icon-bar-chart-o',
                 'description' => 'Configure Piwik tracking options.',
                 'class' => 'srlabs\Piwik\Models\Settings',
+                'permissions' => ['srlabs.piwik.access_settings'],
                 'order' => 600
             ]
         ];
